@@ -8,11 +8,12 @@ const list = document.querySelector("#todo-list")
 
 const reset = document.querySelector("#reset")
 
-const items = document.querySelector(".items")
+const items = document.querySelectorAll(".items")
 
 butt.addEventListener('click', function(evt){
   const newLi = document.createElement('li')
   newLi.textContent = inp.value
+  newLi.className = "items"
   if(inp.value !== "") {
     document.querySelector('ul').appendChild
     (newLi)
@@ -22,10 +23,8 @@ butt.addEventListener('click', function(evt){
 
 reset.addEventListener('click', function(evt) {
   inp.value = ""
-  for(let i = 0; i < list.childNodes.length; i++){
-    list.removeChild(list.childNodes[i])
-  }
-})
+  document.querySelectorAll(".items").forEach(function(a) {
+    a.remove()
+  })
+  })
 
-
-// list.removeChild(list.childNodes[0])
