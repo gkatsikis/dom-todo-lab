@@ -22,5 +22,10 @@ butt.addEventListener('click', function(evt){
 
 reset.addEventListener('click', function(evt) {
   inp.value = ""
-  document.removeChild('li')
+  for(let i = 0; i < list.childNodes.length; i++){
+    list.removeChild(list.childNodes[i])
+  }
 })
+
+
+// list.removeChild(list.childNodes[0])
