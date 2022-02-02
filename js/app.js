@@ -28,3 +28,6 @@ reset.addEventListener('click', function(evt) {
   })
   })
 
+  // items.addEventListener('click', function(evt){
+  //   remove()
+  // })
