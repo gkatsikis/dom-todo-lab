@@ -21,12 +21,12 @@ butt.addEventListener('click', function(evt){
   }
 })
 
-reset.addEventListener('click', function(evt) {
-  inp.value = ""
-  document.querySelectorAll(".items").forEach(function(a) {
-    a.remove()
-  })
-  })
+// reset.addEventListener('click', function(evt) {
+//   inp.value = ""
+//   document.querySelectorAll(".items").forEach(function(a) {
+    
+//   })
+//   })
 
   // items.addEventListener('click', function(evt){
   //   remove()
